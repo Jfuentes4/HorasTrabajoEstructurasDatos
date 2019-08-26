@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calcular tiempo de tabajo</title>
+  </head>
+  <body>
+    <div id="controls">
+      <div id="entrance-time">
+        Entrada:
+        <input type="number" min="1" max="12" value="" placeholder="hora" id="entranceHour">
+        <input type="number" min="0" max="59" value="" placeholder="minuto" id="entranceMinute">
+        <input type="number" min="0" max="59" value="" placeholder="segundo" id="entranceSecond">
+        <select id="entranceAMPM" name="">
+          <option value="am">AM</option>
+          <option value="pm">PM</option>
+        </select>
+      </div>
+      <div id="departure-time">
+        Salida:
+        <input type="number" min="1" max="12" value="" placeholder="hora" id="departureHour">
+        <input type="number" min="0" max="59" value="" placeholder="minuto" id="departureMinute">
+        <input type="number" min="0" max="59" value="" placeholder="segundo" id="departureSecond">
+        <select id="departureAMPM" name="">
+          <option value="am">AM</option>
+          <option value="pm">PM</option>
+        </select>
+      </div>
+      <button type="button" id="btnCalcular">Calcular Tiempo</button>
+    </div>
+
+    <div id="results">
+
+    </div>
+
+    <script src="../js/main.js" type="module"></script>
+  </body>
+</html>
